@@ -1,0 +1,18 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class procurarClientes {
+	public static void procurarCliente(NovoCliente clientes[]) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String nome;
+		
+		//nome = clientes[i].getNome();
+		
+		for() 
+		
+	}
+}

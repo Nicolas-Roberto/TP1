@@ -1,0 +1,16 @@
+package primeiroProjeto;
+
+public class FuncoesGenericas {
+	public static boolean verificar(NovoCliente clientes[], NovoProduto produtos[]) {
+		boolean erro = false;
+		if( clientes == null ) {
+			System.out.println("Nenhum cliente encontrado!!!!\n");
+			erro = true;
+		}
+		if( produtos == null ) {
+			System.out.println("Nenhum produto encontrado!!!!!\n");
+			erro = true;
+		}
+		return erro;
+	}
+}

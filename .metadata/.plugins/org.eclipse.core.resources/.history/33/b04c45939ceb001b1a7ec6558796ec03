@@ -1,0 +1,27 @@
+package primeiroProjeto;
+
+
+public class NovoCliente {
+	String nome;
+	String end;
+	String tel;
+	
+	public 
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setEnd(String end) {
+		this.end = end;
+	}
+	public String getEnd() {
+		return end;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	
+}

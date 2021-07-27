@@ -1,0 +1,9 @@
+package primeiroProjeto;
+
+public class procurarClientes {
+	public static void procurarCliente() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+	}
+}

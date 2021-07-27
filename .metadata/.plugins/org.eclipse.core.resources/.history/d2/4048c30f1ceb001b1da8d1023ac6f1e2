@@ -1,0 +1,43 @@
+package primeiroProjeto;
+
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class NovoCliente {
+	String nome;
+	String end;
+	String tel;
+	
+	public setNome(String[] args) {
+		
+	}
+	
+	public static void cadastrarCliente(String[] args) throws IOException {
+		
+		Scanner ler = new Scanner(System.in);
+		
+		String nome, end, tel;
+		
+		FileWriter arquivo = new FileWriter("data/clientes.csv");
+		PrintWriter gravarCliente = new PrintWriter(arquivo);
+		
+		System.out.println("Digite o nome do novo cliente: ");
+		nome = ler.next();
+		System.out.println("Digite o endereço do novo cliente: ");
+		end = ler.next();
+		System.out.println("Digite o telefone do novo cliente: ");
+		tel = ler.next();
+		
+		NovoCliente cliente = new NovoCliente();
+		cliente.nome = nome;
+		cliente.end = end;
+		cliente.tel = tel;
+		System.out.println(cliente.nome);
+		//gravarCliente.write("Nome: " + nome + "\nEndereço: " + end + "\nTelefone: " + tel);
+		
+		arquivo.close();
+		
+	}
+}

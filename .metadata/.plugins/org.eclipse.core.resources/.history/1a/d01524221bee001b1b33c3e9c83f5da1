@@ -1,0 +1,52 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class CadastrarNovoProduto {
+	public static NovoProduto[] cadastrarNovosProdutos(NovoProduto totalProdutos[]) {
+			
+			String nome, desc;
+			float preco;
+			int qtdsEmEstoque;
+			int qtdsProdutos;
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Quantidade de produtos que deseja cadastrar:");
+			qtdsProdutos = sc.nextInt();
+			
+			if(totalProdutos == null) {
+				NovoProduto produtos[] = new NovoProduto[qtdsProdutos];
+				
+				for(int i = 0; i < qtdsProdutos; i++) {
+					produtos[i] = new NovoProduto();
+					
+					System.out.println("Nome do produto: " + (i+1) + ":");
+					nome = sc.next();
+					produtos[i].setNome(nome);
+					System.out.println("Descrição do produto " + (i+1) + ":");
+					desc = sc.next();
+					produtos[i].setDescricao(desc);
+					System.out.println("Valor do produto " + (i+1) + ":");
+					preco = sc.nextFloat();
+					produtos[i].setPreco(preco);
+					System.out.println("Quantidade disponivel: " );
+					qtdsEmEstoque = sc.nextInt();
+					produtos[i].setQtdsEmEstoque(qtdsEmEstoque);
+				}
+				
+				return produtos;	
+				
+			} else {
+				qtdsProdutos += totalProdutos.length;
+				NovoCliente produtos[] = new NovoCliente[qtdsProdutos];
+				
+				for(int i = 0; i < totalProdutos.length; i++) {
+					produtos[i] = totalProdutos[i];				
+				}
+				
+				return produtos;	
+			}
+			
+		}
+}

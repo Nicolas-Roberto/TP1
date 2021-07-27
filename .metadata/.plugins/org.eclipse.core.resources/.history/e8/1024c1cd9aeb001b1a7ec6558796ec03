@@ -1,0 +1,30 @@
+package primeiroProjeto;
+
+
+import java.io.PrintWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class NovoCliente {
+	static String nome;
+	static String end;
+	static String tel;
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setEnd(String end) {
+		this.end = end;
+	}
+	public String getEnd() {
+		return end;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	
+
+}

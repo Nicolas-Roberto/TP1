@@ -1,0 +1,16 @@
+package primeiroProjeto;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class procurarClientes {
+	public static void procurarCliente(String... clientes) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String nome;
+		int i=0;
+		
+		
+	}
+}

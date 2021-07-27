@@ -1,0 +1,27 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class FuncoesGenericas {
+	
+	public static void Esperar() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("\nDigite 0 para continuar:");
+		sc.next();
+	}
+	
+	public static boolean verificar(NovoCliente clientes[], NovoProduto produtos[]) {
+		boolean erro = false;
+		if( clientes == null ) {
+			System.out.println("Nenhum cliente encontrado!!!!\n");
+			erro = true;
+		}
+		if( produtos == null ) {
+			System.out.println("Nenhum produto encontrado!!!!!\n");
+			erro = true;
+		}
+		return erro;
+	}
+}

@@ -1,0 +1,31 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class procurarClientes {
+	public static void procurarCliente(NovoCliente clientes[]) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+
+		String nome, end = null, tel = null;
+		
+		System.out.println("Digite o nome do cliente a ser procurado:");
+		nome = sc.next();
+		
+		for(int i = 0; i < clientes.length; i++) {
+			if(nome.equals(clientes[i].getNome())) {
+				end = clientes[i].getEnd();
+				tel = clientes[i].getTel();
+			}
+		
+		if(tel == null) {
+			System.out.println("Cliente nâo encontrado");
+		} else {
+			System.out.print("Nome: " + nome + "\nEndereço: " + end + "\nTelefone: " + tel );
+		}
+			
+		}
+		
+	}
+}

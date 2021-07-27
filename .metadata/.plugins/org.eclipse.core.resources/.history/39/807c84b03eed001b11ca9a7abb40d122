@@ -1,0 +1,30 @@
+package primeiroProjeto;
+
+import java.util.Scanner;
+
+public class CadastrarNovoProduto {
+	public static NovoProduto[] cadastrarNovosProdutos() {
+			
+			String nome, desc;
+			float preco;
+			int qtdsEmEstoque;
+			int qtdsProdutos;
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Quantidade de clientes que deseja cadastrar:");
+			qtdsClientes = sc.nextInt();
+			NovoCliente clientes[] = new NovoCliente[qtdsClientes];
+			
+			for(int i = 0; i < qtdsClientes; i++) {
+				clientes[i] = new NovoCliente();
+				
+				System.out.println("Nome do cliente " + (i+1) + ":");
+				nome = sc.next();
+				clientes[i].setNome(nome);
+
+			}
+			
+			return clientes;	
+		}
+}

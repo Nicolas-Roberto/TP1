@@ -1,0 +1,7 @@
+package primeiroProjeto;
+
+public class FuncoesGenericas {
+	public static void verificar(NovoCliente clientes[], NovoProduto produtos[]) {
+		
+	}
+}
