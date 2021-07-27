@@ -6,15 +6,20 @@ public class CadastrarNovoProduto {
 	public static NovoProduto[] cadastrarNovosProdutos(NovoProduto totalProdutos[]) {
 			
 			String nome, desc;
-			float preco;
-			int qtdsEmEstoque;
-			int qtdsProdutos;
+			float preco = 0;
+			int qtdsEmEstoque = 0;
+			int qtdsProdutos = 0;
 			
 			Scanner sc = new Scanner(System.in);
 			
 			System.out.println("Quantidade de produtos que deseja cadastrar:");
+			try {
 			qtdsProdutos = sc.nextInt();
-			 
+			} catch(Exception e) {
+				System.out.println("Comando Invalido");
+				FuncoesGenericas.esperar(); 
+			}
+			// verifica se ja ha produtos cadastrados e adiciona todos os produtos a um array vazio	
 			if(totalProdutos == null) {
 				NovoProduto produtos[] = new NovoProduto[qtdsProdutos];
 				

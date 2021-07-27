@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ProcurarClientes {
 	public static void procurarCliente(NovoCliente clientes[]) {
-
+		// busca um cliente pelo nome
 		Scanner sc = new Scanner(System.in);
 		
 		String nome, end = null, tel = null;

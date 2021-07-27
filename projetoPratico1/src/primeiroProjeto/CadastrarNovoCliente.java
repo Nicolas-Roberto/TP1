@@ -7,12 +7,17 @@ public class CadastrarNovoCliente {
 		
 		String nome, end, tel;
 		
-		int qtdsClientes;
+		int qtdsClientes = 0;
 		Scanner sc = new Scanner(System.in);
-
+		
 		System.out.println("Quantidade de clientes que deseja cadastrar:");
+		try {
 		qtdsClientes = sc.nextInt();
-
+		} catch(Exception e) {
+			System.out.println("Comando Invalido");
+			FuncoesGenericas.esperar(); 
+		}
+		// verifica se ja ha clientes cadastrados e adiciona todos os clientes a um array vazio	
 		if(totalClientes == null) {
 			NovoCliente clientes[] = new NovoCliente[qtdsClientes];
 				

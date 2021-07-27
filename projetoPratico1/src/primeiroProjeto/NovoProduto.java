@@ -1,6 +1,6 @@
 package primeiroProjeto;
 
-public class NovoProduto {
+public class NovoProduto { // objeto produto
 	private String nome;
 	private String descricao;
 	private float preco;

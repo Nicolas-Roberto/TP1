@@ -3,7 +3,7 @@ package primeiroProjeto;
 import java.util.Scanner;
 
 public class FuncoesGenericas {
-	
+	// gera o menu
 	public static void menu() {
 		System.out.println("----------------------------------");
 		System.out.println("1. Cadastro de novo cliente. ");
@@ -15,7 +15,7 @@ public class FuncoesGenericas {
 		System.out.println("7. Sair. ");
 		System.out.print("\nEscolha um comando: ");
 	}
-	
+	// espera o usuario digitar algo 
 	public static void esperar() {
 		
 		Scanner sc = new Scanner(System.in); 
@@ -23,7 +23,7 @@ public class FuncoesGenericas {
 		System.out.println("\nDigite 0 para continuar:");
 		sc.next();
 	}
-	
+	// verifica se ha clientes e produtos cadastrados
 	public static boolean verificar(NovoCliente clientes[], NovoProduto produtos[]) {
 		boolean erro = false;
 		if( clientes == null ) {
@@ -37,10 +37,11 @@ public class FuncoesGenericas {
 		FuncoesGenericas.esperar();
 		return erro;
 	}
-
+	// limpa o terminal
 	public static void clear() {
 		for( int i=0; i<5; i++ ) {
 			System.out.println("\n");
 		}
 	}
+
 }

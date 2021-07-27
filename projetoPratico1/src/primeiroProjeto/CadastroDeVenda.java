@@ -3,6 +3,7 @@ package primeiroProjeto;
 import java.util.Scanner;
 
 public class CadastroDeVenda {
+	// mostra lista de clientes e seleciona um deles
 	public static int mostrarListaDeClientes(NovoCliente clientes[]) {
 		
 		String nome, end, tel; 
@@ -29,6 +30,7 @@ public class CadastroDeVenda {
 		}
 	}
 
+	// mostra lista de produtos, e caso alterar seja true seleciona um produto
 	public static int mostrarListaDeProdutos(NovoProduto produtos[], boolean alterar) {
 		
 		String nome, desc;
@@ -62,7 +64,8 @@ public class CadastroDeVenda {
 			
 		}
 	}
-
+	
+	// realiza uma compra 
 	public static void comprar(NovoCliente clientes[], 
 			int idCliente, NovoProduto produtos[], int idProduto) { 
 		

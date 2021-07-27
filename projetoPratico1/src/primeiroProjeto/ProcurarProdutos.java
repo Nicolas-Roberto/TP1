@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 	public class ProcurarProdutos {
 		public static void procurarProduto(NovoProduto produtos[]) {
-	
+			// busca um produto pelo nome
 			Scanner sc = new Scanner(System.in);
 			
 				String nome, desc = null;

@@ -1,7 +1,7 @@
 package primeiroProjeto;
 
 
-public class NovoCliente {
+public class NovoCliente { // objeto cliente
 	private String nome;
 	private String end;
 	private String tel;
