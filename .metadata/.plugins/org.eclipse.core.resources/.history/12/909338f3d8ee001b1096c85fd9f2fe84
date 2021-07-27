@@ -19,7 +19,15 @@ public class TP1 {
 		String comando;
 
 		do {
-			FuncoesGenericas.menu();
+			System.out.println("----------------------------------");
+			System.out.println("1. Cadastro de novo cliente. ");
+			System.out.println("2. Busca por cliente. ");
+			System.out.println("3. Cadastro de novo produto. ");
+			System.out.println("4. Busca por produto. ");
+			System.out.println("5. Cadastro de venda. ");
+			System.out.println("6. Mostrar produtos em estoque. ");
+			System.out.println("7. Sair. ");
+			System.out.print("\nEscolha um comando: ");
 			
 			comando = sc.next();
 			
