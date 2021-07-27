@@ -27,10 +27,11 @@ public class CadastrarNovoProduto {
 					produtos[i] = new NovoProduto();
 					
 					System.out.println("Nome do produto: " + (i+1) + ":");
+					sc.nextLine();
 					nome = sc.nextLine();
 					produtos[i].setNome(nome);
-					FuncoesGenericas.clearBuffer(sc);
 					System.out.println("Descrição do produto " + (i+1) + ":");
+					sc.nextLine();
 					desc = sc.nextLine();
 					produtos[i].setDescricao(desc);
 					System.out.println("Valor do produto " + (i+1) + ":");

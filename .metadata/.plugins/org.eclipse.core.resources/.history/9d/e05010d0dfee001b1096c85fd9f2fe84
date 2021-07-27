@@ -31,9 +31,11 @@ public class CadastrarNovoCliente {
 				System.out.println("Endereço do cliente " + (i+1) + ":\n");
 				end = sc.nextLine();
 				clientes[i].setEnd(end);
+				FuncoesGenericas.clearBuffer(sc);
 				System.out.println("Telefone do cliente " + (i+1) + ":\n");
 				tel = sc.nextLine();
 				clientes[i].setTel(tel);	
+				FuncoesGenericas.clearBuffer(sc);
 				
 			}
 			return clientes;

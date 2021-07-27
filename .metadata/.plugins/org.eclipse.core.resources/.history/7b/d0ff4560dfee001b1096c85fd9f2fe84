@@ -26,13 +26,17 @@ public class CadastrarNovoCliente {
 			
 				System.out.println("Nome do cliente " + (i+1) + ":\n");
 				nome = sc.nextLine();
-				clientes[i].setNome(nome);
 				FuncoesGenericas.clearBuffer(sc);
+				clientes[i].setNome(nome);
 				System.out.println("Endereço do cliente " + (i+1) + ":\n");
+				
 				end = sc.nextLine();
+				FuncoesGenericas.clearBuffer(sc);
 				clientes[i].setEnd(end);
 				System.out.println("Telefone do cliente " + (i+1) + ":\n");
+				
 				tel = sc.nextLine();
+				FuncoesGenericas.clearBuffer(sc);
 				clientes[i].setTel(tel);	
 				
 			}

@@ -43,8 +43,8 @@ public class FuncoesGenericas {
 			System.out.println("\n");
 		}
 	}
-	// limpa o scanner
-	public static void clearBuffer(Scanner scanner) {
+
+   private static void clearBuffer(Scanner scanner) {
         if (scanner.hasNextLine()) {
             scanner.nextLine();
         }
