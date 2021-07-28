@@ -1,0 +1,71 @@
+package primeiroProjeto;
+
+public class CadastroAutomatico {
+	public static NovoCliente[] cadastrarClientesAuto() {
+		
+		NovoCliente clientes[] = new NovoCliente[10];
+		
+		clientes[0] = new NovoCliente();
+		clientes[0].setNome("Nicolas");
+		clientes[0].setEnd("Samambaia");
+		clientes[0].setTel("61986180872");
+		
+		clientes[1] = new NovoCliente();
+		clientes[1].setNome("Ana Beatriz");
+		clientes[1].setEnd("Taguatinga");
+		clientes[1].setTel("61986180872");
+		
+		clientes[2] = new NovoCliente();
+		clientes[2].setNome("Bia");
+		clientes[2].setEnd("Samambaia");
+		clientes[2].setTel("61986180872");
+		
+		clientes[3] = new NovoCliente();
+		clientes[3].setNome("Carlos Souza");
+		clientes[3].setEnd("Taguatinga");
+		clientes[3].setTel("61986180872");
+		
+		clientes[4] = new NovoCliente();
+		clientes[4].setNome("Daniel Rocha");
+		clientes[4].setEnd("Samambaia");
+		clientes[4].setTel("61986180872");
+		
+		clientes[5] = new NovoCliente();
+		clientes[5].setNome("Ester");
+		clientes[5].setEnd("Taguatinga");
+		clientes[5].setTel("61986180872");
+		
+		clientes[6] = new NovoCliente();
+		clientes[6].setNome("Francisco");
+		clientes[6].setEnd("Samambaia");
+		clientes[6].setTel("61986180872");
+		
+		clientes[7] = new NovoCliente();
+		clientes[7].setNome("Gabriel Rodrigues");
+		clientes[7].setEnd("Taguatinga");
+		clientes[7].setTel("61986180872");
+		
+		clientes[8] = new NovoCliente();
+		clientes[8].setNome("Helen");
+		clientes[8].setEnd("Samambaia");
+		clientes[8].setTel("61986180872");
+		
+		clientes[9] = new NovoCliente();
+		clientes[9].setNome("Italo");
+		clientes[9].setEnd("Taguatinga");
+		clientes[9].setTel("61986180872");
+		
+		return clientes;
+	}
+
+	public static NovoProduto[] cadastrarProdutosAuto() {
+		
+		NovoProduto produtos[] = NovoProduto[10];
+		
+		produtos[0] = new NovoProduto();
+		produtos[0].setNome("");
+		produtos[0].setDescricao("");
+		
+		return produtos;
+	}
+}

@@ -1,0 +1,11 @@
+package primeiroProjeto;
+
+public class CadastroAutomatico {
+	public static NovoCliente[] cadastrarClientesAuto() {
+		
+		String nome, end, tel;
+		NovoCliente clientes[] = new NovoCliente[10];
+		
+		return clientes;
+	}
+}

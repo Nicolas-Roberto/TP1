@@ -18,8 +18,7 @@ public class TP1 {
 		boolean comprarDnv = true;
 		String comando;
 		
-		clientes = CadastroAutomatico.cadastrarClientesAuto(); // cadastra 10 clientes
-		produtos = CadastroAutomatico.cadastrarProdutosAuto(); // cadastra 10 produtos
+		clientes = CadastroAutomatico.cadastrarClientesAuto();
 
 		do {
 			FuncoesGenericas.menu(); //menu
@@ -63,9 +62,7 @@ public class TP1 {
 							FuncoesGenericas.clear();
 							
 							System.out.println("Deseja realizar outra compra? (s/n)"); // opcao de continuar o loop
-							if(sc.next().charAt(0) == 'n') {
-								comprarDnv = false; 
-							}
+							if(sc.next().charAt(0) == 'n') comprarDnv = false; 
 						} while(comprarDnv); // loop de compra
 					}
 					break;

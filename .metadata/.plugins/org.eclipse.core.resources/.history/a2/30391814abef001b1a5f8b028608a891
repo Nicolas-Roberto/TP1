@@ -1,0 +1,9 @@
+package primeiroProjeto;
+
+public class CadastroAutomatico {
+	public static NovoCliente[] cadastrarClientesAuto() {
+		
+		
+		return clientes;
+	}
+}

@@ -1,0 +1,50 @@
+package primeiroProjeto;
+
+public class CadastroAutomatico {
+	public static NovoCliente[] cadastrarClientesAuto() {
+		
+		NovoCliente clientes[] = new NovoCliente[10];
+		
+		clientes[0].setNome("asd");
+		clientes[0].setEnd("asad");
+		clientes[0].setTel("asd");
+		
+		clientes[1].setNome("asd");
+		clientes[1].setEnd("asad");
+		clientes[1].setTel("asd");
+		
+		clientes[2].setNome("asd");
+		clientes[2].setEnd("asad");
+		clientes[2].setTel("asd");
+		
+		clientes[3].setNome("asd");
+		clientes[3].setEnd("asad");
+		clientes[3].setTel("asd");
+		
+		clientes[4].setNome("asd");
+		clientes[4].setEnd("asad");
+		clientes[4].setTel("asd");
+		
+		clientes[5].setNome("asd");
+		clientes[5].setEnd("asad");
+		clientes[5].setTel("asd");
+		
+		clientes[6].setNome("asd");
+		clientes[6].setEnd("asad");
+		clientes[6].setTel("asd");
+		
+		clientes[7].setNome("asd");
+		clientes[7].setEnd("asad");
+		clientes[7].setTel("asd");
+		
+		clientes[8].setNome("asd");
+		clientes[8].setEnd("asad");
+		clientes[8].setTel("asd");
+		
+		clientes[9].setNome("asd");
+		clientes[9].setEnd("asad");
+		clientes[9].setTel("asd");
+		
+		return clientes;
+	}
+}
